@@ -26,5 +26,14 @@ Os algoritmos possuem uma sequencia lógica em ordenação e finita. Além disso
 Ex: area = 2 * 2;
   
   Exercício:
-  
-<img src="https://i.ibb.co/QDtgBL5/Captura-de-tela-de-2021-10-06-23-04-32.png" width="400">
+~~~java
+    public class Main
+{
+	public static void main(String[] args) {
+		int idade = 25;
+		string nome = "Maicon Henrique";
+		
+		string sobrenome = nome;
+	}
+}
+~~~
