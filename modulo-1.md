@@ -4,9 +4,14 @@
 
 Os algoritmos possuem uma sequencia lógica em ordenação e finita. Além disso, não é ambíguo no que diz respeito que é entendido da mesma forma pelas outras pessoas.
 
-exemplo:
+Exemplo (Algoritimo para trocar uma lâmpada):
 
-<img src="https://slideplayer.com.br/slide/44194/1/images/11/Algoritmos+Abaixo+segue+um+exemplo+simples+de+algoritmo%2C+para+a+troca+de+um+pneu+furado%3A+desligar+o+carro..jpg" alt="Algoritmo-pneu-furado" width="400"/>
+1. Pegar uma escada;
+2. Pegar uma lâmpada nova;
+3. Subir degraus "enquanto" não conseguir alcançar a lâmpada;
+4. Tirar lâmpada antiga;
+5. Colocar lâmpada nova;
+6. Descer degraus "enquanto" não conseguir alcançar o chão;
 
 ## *2. Variáveis*
 
