@@ -36,9 +36,60 @@ Ex: area = 2 * 2;
 {
 	public static void main(String[] args) {
 		int idade = 25;
-		string nome = "Maicon Henrique";
+		String nome = "Maicon Henrique";
 		
-		string sobrenome = nome;
+		String sobrenome = nome;
 	}
+}
+~~~
+
+## *3. Tipos de dados*
+
+Primitivos:
+- **Inteiro | int**: Valores inteiros (ex: 10,0,-8);
+- **Real | double | float**: Valores negativos e positivos e fracionários (ex: 10, 15.5, -8.1);
+- **Caractere | string**: Texto ("ENTRE ASPAS DUPLAS");
+- **Lógico | boolean**: Verdadeiro ou Falso.
+
+*Tipo de dado* - *Em Java é nescessário passar o tipo do dado da variável quando for declarar;*<br>
+*Ponto e vírgula* - *Sempre ao finalizar a declaração de uma variável deve-se utilizar ponto e vírgula;*<br>
+*Case-sensitive* - *Caracteres em caixa alta e em caixa baixa são tratados de modo diferente;*<br>
+
+__"camelCase: palavrasCompostasSeparandoPelaLetraMaiúscula"__
+
+Exercícios:
+~~~java
+    public class Main
+{
+	public static void main(String[] args) {
+		String nomeDoAluno = "Maicon Henrique";
+		String descriçãoProduto = "Produto descrição";
+		int codigoExpresso = 777878;
+	}
+}
+~~~
+
+~~~java
+puclic static void main(String args[])
+{
+	int idade;
+	double altura;
+	boolean preparado;
+	String nome;
+	
+	idade = 25;
+	altura = 1.83;
+	preparadp = true;
+	nome = "Maicon Henrique"
+}
+~~~
+
+**Constante** (Dados que *não devem ser alterados* durante a execução do programa). Utiliza o *const* ou *final* na declaração. Boa prática utilizar *caixa alta*.
+~~~java
+    public class Main
+{
+	public static void main(String[] args) {
+		final float PI = 3.1416;
+		final String NOME_PAGINA = "home";
 }
 ~~~
