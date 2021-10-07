@@ -25,7 +25,7 @@ exemplo:
 
 Ex: area = 2 * 2;
   
-  Exercício:
+  Exercício (Linguagem Java):
 ~~~java
     public class Main
 {
