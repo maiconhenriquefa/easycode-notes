@@ -9,7 +9,7 @@ Neste módulo foram abordados os conceitos de:
 5. [Estruturas Condicionais - Condicional simples](#estruturas-condicionais)
 7. [Modularização](#modularização)
 
-## *1. Algoritmos*
+## Algoritmos
 
 Os algoritmos possuem uma sequencia lógica em ordenação e finita. Além disso, não é ambíguo no que diz respeito que é entendido da mesma forma pelas outras pessoas.
 
@@ -39,7 +39,7 @@ public class Main
 `System.out.print` - Print na tela<br>
 `ln` - Pula para próxima linha<br>
 
-## *2. Variáveis*
+## Variáveis
 
 "Corresponde a uma posição na memório do computador que armazena um determinado dado na memória RAM (traduzido - "Memória de Acesso Aleatório"), onde pode ser modificado ao longo do programa".
   
@@ -69,7 +69,7 @@ Ex: `area = 2 * 2`;
 }
 ~~~
 
-## *3. Tipos de dados*
+## Tipos de dados
 
 Primitivos:
 - **Inteiro - `int`** : Valores inteiros (ex: 10,0,-8);
@@ -120,7 +120,7 @@ puclic static void main(String args[])
 }
 ~~~
 
-## *4. Operadores, Expressões e Comandos*
+## Operadores, Expressões e Comandos
 
 ### Operadores aritmético:
 
