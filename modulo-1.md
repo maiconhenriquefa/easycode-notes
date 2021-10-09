@@ -1,4 +1,13 @@
-# modulo-1
+#  :pushpin: Módulo 1 - Fundamentos de Introdução a Programação
+
+Neste módulo foram abordados os conceitos de:
+  
+1. [Algoritmos](algoritmos)
+2. [Variáveis](variaveis)
+3. [Tipos de Dados Fundamentais](tipos-de-dados-fundamentais)
+4. [Operadores, Expressões e Comandos](operadores,-expressoes-e-comandos)
+5. [Estruturas Condicionais - Condicional simples](estruturas-condicionais)
+7. [Modularização](modularização)
 
 ## *1. Algoritmos*
 
@@ -14,6 +23,7 @@ Exemplo (Algoritimo para trocar uma lâmpada):
 6. Descer degraus "enquanto" não conseguir alcançar o chão;
 
 Primeiro código rodando:
+
 ~~~java
 public class Main
 {
@@ -26,8 +36,8 @@ public class Main
 // HELLO WORLD!
 ~~~
 
-System.out.print = "Print na tela";<br>
-ln = "Pula para próxima linha".<br>
+`System.out.print` - Print na tela<br>
+`ln` - Pula para próxima linha<br>
 
 ## *2. Variáveis*
 
@@ -41,10 +51,10 @@ ln = "Pula para próxima linha".<br>
   
 ### Declaração
   - Identificador: Nome dado aos "objetos" utilizados no programa (ex: area);
-  - Atribuição: Comando que define ou redefine o valor armazenado em uma variável ("=");
+  - Atribuição: Comando que define ou redefine o valor armazenado em uma variável (`=`);
   - Expressão: Valor ou conjunto de comandos que resulta em um valor (ex: 2*2);
 
-Ex: area = 2 * 2;
+Ex: `area = 2 * 2`;
   
   Exercício (Linguagem Java):
 ~~~java
@@ -62,16 +72,16 @@ Ex: area = 2 * 2;
 ## *3. Tipos de dados*
 
 Primitivos:
-- **Inteiro | int**: Valores inteiros (ex: 10,0,-8);
-- **Real | double**: Valores negativos e positivos e fracionários (ex: 10, 15.5, -8.1);
-- **Caractere | string**: Texto ("ENTRE ASPAS DUPLAS");
-- **Lógico | boolean**: Verdadeiro ou Falso.
+- **Inteiro - `int`** : Valores inteiros (ex: 10,0,-8);
+- **Real - `double`** : Valores negativos e positivos e fracionários (ex: 10, 15.5, -8.1);
+- **Caractere - `string`** : Texto ("ENTRE ASPAS DUPLAS");
+- **Lógico - `boolean`** : Verdadeiro ou Falso.
 
 *Tipo de dado* - *Em Java é nescessário passar o tipo do dado da variável quando for declarar;*<br>
 *Ponto e vírgula* - *Sempre ao finalizar a declaração de uma variável deve-se utilizar ponto e vírgula;*<br>
 *Case-sensitive* - *Caracteres em caixa alta e em caixa baixa são tratados de modo diferente;*<br>
 
-__"camelCase: palavrasCompostasSeparandoPelaLetraMaiúscula"__
+__"camelCase - `palavrasCompostasSeparandoPelaLetraMaiúscula`"__
 
 Exercícios:
 ~~~java
@@ -100,7 +110,7 @@ puclic static void main(String args[])
 }
 ~~~
 
-**Constantes** (Dados que *não devem ser alterados* durante a execução do programa). Utiliza o *final* na declaração. Boa prática utilizar *caixa alta*.
+**Constantes** (Dados que *não devem ser alterados* durante a execução do programa). Utiliza o `final` na declaração. Boa prática utilizar *CAIXA ALTA*.
 ~~~java
     public class Main
 {
@@ -114,10 +124,10 @@ puclic static void main(String args[])
 
 ### Operadores aritmético:
 
-- Soma (-);
-- Subtração (+);
-- Multiplicação (*);
-- Divisão (/);
+- Soma - `-`
+- Subtração - `+`
+- Multiplicação - `*`
+- Divisão - `/`
 
 **Assim como na matemática, os operadoderes de multiplicação e divisão tem preferência na expressão, e os parenteses demonstram ainda mais preferência.*
 
@@ -147,13 +157,13 @@ public class Main
 ### Operadores de Igualdade:
 (*Retorna valor booleano*)
 
-("==") Utilizado quando desejamos verificar se uma variável é *igual* a outra;<br>
-("!=") Utilizado quando desejamos verificar se uma variável é *diferente* de outra;<br>
+`==` - Utilizado quando desejamos verificar se uma variável é *igual* a outra;<br>
+`!=` - Utilizado quando desejamos verificar se uma variável é *diferente* de outra;<br>
 
 ### Operadores de Incremento e Decremento:
 
-("++") Incremento;<br>
-("--") Decremento;<br>
+`++` - Incremento<br>
+`--` - Decremento<br>
 
 ### Operadores Relacional
 (*Obtem a relação dos membros da esquerda com os da direita)
@@ -192,13 +202,13 @@ public class Main
 
 ### Operadores Lógicos
 
-**Conectivo de conjunção:** E(and) -> ( && )<br>
+**Conectivo de conjunção:** E (and) - `&&` <br>
 As duas condições precisam ser VERDADEIRAS
 
-**Conectivo de disjunção:** OU(or) -> ( || )<br>
+**Conectivo de disjunção:** OU (or) - `||` <br>
 Apenas uma condição precisa ser VERDADEIRA
 
-**TABELA VERDADE (&&)**
+**TABELA VERDADE `&&`**
 | BOOLEAN | BOOLEAN | RESULT
 | :--------: | :--------:  | :------: |
 | FALSE | FALSE | **FALSE**|
@@ -206,7 +216,7 @@ Apenas uma condição precisa ser VERDADEIRA
 | TRUE  | FALSE | **FALSE**|
 | TRUE	| TRUE  | **TRUE** |
 
-**TABELA VERDADE (||)**
+**TABELA VERDADE `||`**
 | BOOLEAN | BOOLEAN | RESULT
 | :--------: | :--------:  | :------: |
 | FALSE | FALSE | **FALSE**|
