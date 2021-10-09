@@ -4,10 +4,9 @@ Neste módulo foram abordados os conceitos de:
   
 1. [Algoritmos](#algoritmos)
 2. [Variáveis](#variáveis)
-3. [Tipos de Dados Fundamentais](#tipos-de-dados-fundamentais)
-4. [Operadores, Expressões e Comandos](#operadores,-expressões-e-comandos)
-5. [Estruturas Condicionais - Condicional simples](#estruturas-condicionais)
-7. [Modularização](#modularização)
+3. [Tipos de Dados](#tipos-de-dados)
+4. [Operadores, Expressões e Comandos](#operadores-expressões-e-comandos)
+5. [Estruturas Condicionais](#estruturas-condicionais)
 
 ## Algoritmos
 
@@ -223,3 +222,40 @@ Apenas uma condição precisa ser VERDADEIRA
 | FALSE | TRUE  | **TRUE**|
 | TRUE  | FALSE | **TRUE**|
 | TRUE	| TRUE  | **TRUE** |
+
+## Estruturas Condicionais
+
+### Condicional simples
+
+A estrutura condicional if/else permite ao programa avaliar uma expressão como
+sendo verdadeira ou falsa e, de acordo com o resultado dessa verificação, executar uma outra rotina.
+
+`if` - se <br>
+`else` - se não <br>
+
+Exemplo em JAVA:
+
+~~~JAVA
+if (expressão booleana) {
+   //bloco de código 1
+} else {
+   //bloco de código 2
+   }
+~~~
+
+### Condicional composta
+
+Para mais de uma condição à estrutura de decisão podemos adicionar ao `else if`.
+
+Exemplo em JAVA:
+
+~~~JAVA
+if (expressão booleana) {
+   //bloco de código 1
+} else if {
+   //bloco de código 2
+   }
+} else {
+   //bloco de código 3
+   }
+~~~
