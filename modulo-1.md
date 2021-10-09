@@ -3,9 +3,9 @@
 Neste módulo foram abordados os conceitos de:
   
 1. [Algoritmos](algoritmos)
-2. [Variáveis](variaveis)
+2. [Variáveis](variáveis)
 3. [Tipos de Dados Fundamentais](tipos-de-dados-fundamentais)
-4. [Operadores, Expressões e Comandos](operadores,-expressoes-e-comandos)
+4. [Operadores, Expressões e Comandos](operadores,-expressões-e-comandos)
 5. [Estruturas Condicionais - Condicional simples](estruturas-condicionais)
 7. [Modularização](modularização)
 
