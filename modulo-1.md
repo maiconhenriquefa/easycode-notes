@@ -207,6 +207,9 @@ As duas condições precisam ser VERDADEIRAS
 **Conectivo de disjunção:** OU (or) - `||` <br>
 Apenas uma condição precisa ser VERDADEIRA
 
+**Conectivo de negação:** NÃO (not) - `!` <br>
+Negará a condição VERDADEIRA ou FALSA
+
 **TABELA VERDADE `&&`**
 | BOOLEAN | BOOLEAN | RESULT
 | :--------: | :--------:  | :------: |
@@ -289,5 +292,88 @@ public class Main
 	        System.out.println("A Equipe B venceu!");
 	    }
 	}
+}
+~~~
+
+Desafio aplicando condicional composta e operadores lógicos:
+
+~~~JAVA
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    final int CONDICAO1 = 280;
+	    final int CONDICAO2 = 700;
+	    final int CONDICAO3 = 1500;
+	    
+	    
+	    Scanner scan = new Scanner(System.in);
+        double salario = 0;
+        double percentual = 0;
+        double salarioReajuste = 0;
+	    double valorReajuste = 0;
+	    
+	    System.out.println("Informe o salário do colaborador: ");
+	    salario = scan.nextDouble();
+	    
+	    if(salario <= CONDICAO1){
+	        percentual = 20;
+	        valorReajuste = salario*1.20;
+	        salarioReajuste = valorReajuste - salario;
+	    }else if(salario > CONDICAO1 && salario < CONDICAO2){
+	        percentual = 15;
+	        valorReajuste = salario*1.15;
+	        salarioReajuste = valorReajuste - salario;
+	    }else if(salario > CONDICAO2 && salario < CONDICAO3){
+	        percentual = 10;
+	        valorReajuste = salario*1.10;
+	        salarioReajuste = valorReajuste - salario;
+	    }else{
+	        percentual = 05;
+	        valorReajuste = salario*1.05;
+	        salarioReajuste = valorReajuste - salario;
+	    }
+	    System.out.println("O salario é: " + salario);
+	    System.out.println("O percentual é: " + percentual);
+	    System.out.println("Valor real reajustado é: " + salarioReajuste);
+	    System.out.println("Valor reajuste: " + valorReajuste);
+	}
+}
+~~~
+
+## Modularização
+
+**Modularização** - *Conceito computacional que é empregado para dividir o seu programa em partes funcionais, partes essas qeu conversam umas com as outras.*
+
+Vantagens:
+1. Código mais organizado e legível;
+2. Permite uma manutenção mais fácil e rápida;
+3. Possibilida o reaproveitamento de código.
+
+### Bloco
+
+**Bloco de instrução** - *São seções de código que serão executados quando invocados ou então, quando uma condição for verdadeira.*
+
+Exemplo de bloco:
+~~~JAVA
+exemplo() {
+    trecho de código
+}
+~~~
+
+### Procedimento e Função
+
+**Procedimento** - São estruturas que agrupam um conjunto de comandos, que são executados quando o procedimento é chamado (Não retorna nada)
+~~~JAVA
+public static void exebirResultatdo(int resultado) {
+    System.out.println("A soma foi: " + resultado);
+}
+~~~
+
+**Função** - Tipo especial de procedimento onde depois de executada a chamada, o valor calculado é retornado.
+~~~JAVA
+public static int somar(int a, int b) {
+    return a+b;
 }
 ~~~
