@@ -1,7 +1,7 @@
 # Easycode Notes
 O repositório iniciado é voltado para anotações do curso <a href="https://conteudo.gokursos.com/easycode" target="_blank">Easycode<a/>.
 
-##  :pushpin: Módulo 1 - Fundamentos de Introdução a Programação
+##  :pushpin: <a href="https://github.com/maiconhenriquefa/easycode-notes/blob/main/modulo-1.md">Módulo 1 - Fundamentos de Introdução a Programação<a>
 
 Neste módulo foram abordados os conceitos de:
   
