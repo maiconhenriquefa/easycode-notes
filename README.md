@@ -11,3 +11,10 @@ Neste módulo foram abordados os conceitos de:
 4. Operadores, Expressões e Comandos;
 5. Estruturas Condicionais - Condicional simples
 7. Modularização;
+
+##  :pushpin: <a href="https://github.com/maiconhenriquefa/easycode-notes/blob/main/modulo-2.md">Módulo 2 - Programação Orientada a Objetos (POO)<a>
+
+Neste módulo foram abordados os conceitos de:
+  
+1. Classe, Objeto e Instância;
+2. Instância e Construtores;
