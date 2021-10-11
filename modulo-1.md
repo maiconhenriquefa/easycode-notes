@@ -364,16 +364,27 @@ exemplo() {
 
 ### Procedimento e Função
 
-**Procedimento** - São estruturas que agrupam um conjunto de comandos, que são executados quando o procedimento é chamado (Não retorna nada)
+**Procedimento** - São estruturas que agrupam um conjunto de comandos, que são executados quando o procedimento é chamado (Não retorna um resultado)
+
 ~~~JAVA
 public static void exebirResultatdo(int resultado) {
     System.out.println("A soma foi: " + resultado);
 }
 ~~~
+`void` (vazio) - Utilizado para o procedimento. 
 
 **Função** - Tipo especial de procedimento onde depois de executada a chamada, o valor calculado é retornado.
+
 ~~~JAVA
 public static int somar(int a, int b) {
     return a+b;
 }
 ~~~
+
+**Invocação** - Os valores dos argumentos são copiados para a função/procedimento chamado.
+
+ ~~~JAVA
+resultadoOperacao = somar(num1, num2);
+exibirResultado(resultadoOperacao);
+~~~
+
