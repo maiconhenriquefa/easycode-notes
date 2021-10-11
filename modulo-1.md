@@ -388,3 +388,10 @@ resultadoOperacao = somar(num1, num2);
 exibirResultado(resultadoOperacao);
 ~~~
 
+### Escopo
+
+**Conceito** - O escopo de uma variável éa parte do programa que pode acessar uma variável. Quando se tenta acessar uma variável que não está no escopo, normalmente se têm um erro do compilador.
+
+**Escopo Global** - Uma variável global é declarada fora das funções e pode ser acessada por todas as funções presentes no módulo onde é definida.
+
+**Escopo Local** - Uma variável local existe apenas dentro da função onde foi declarada. As variáveis locais são inicializadas a cada nova chamada à função.
