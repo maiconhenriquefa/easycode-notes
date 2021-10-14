@@ -39,10 +39,17 @@ Uma classe é definida pelos seus membros:
 [modificador] [tipo] nome = [valor]
 ~~~
 - Construtores
+~~~JAVA
+[modificador] nomeDaClasse{
+    ContrutorComNomeDaClasse(parametos){
+    	//corpo();
+    };
+}
+~~~
 - Métodos
 ~~~JAVA
 [modificador] [tipo] nome() {
-    //corpo() ;
+    //corpo();
 }
 ~~~
 
@@ -86,6 +93,8 @@ A classe deve ser capaz de **representar** o objeto real, mas **apenas para as n
 ### Objeto
 
 **Objeto** - É tudo que é manipulado ou então, que pode ser. (fonte: Aurélio)
+
+*Toda classe é um Object.
 
 *Objetos sempre serão compostos de **Atributos**(propriedades) e **Comportamentos**(funções)*
 
@@ -136,3 +145,51 @@ O fenômeno da recursividade sempre irá formar uma pilha até que a expressão 
 ## Métodos
 
 Operações que realizam ações e modificam os valores dos atributos de seu respectivo objeto.
+
+- Especificação (ou cabeçãlho) do método `[modificador] [tipo] nome(parametos)`
+- Assinatura do método `nome(parametos)`
+
+***Tipo de retorno* - é obrigatório. Se o método não tem retorno, usar `void`*
+
+## Encapsulamento
+
+**conceito** - Conceitua-se encapsulamento como sendo o processo utilizado para proteger os campos e operações de uma classe (atributos e métodos), permitindo que apenas os membros públicos. (Fonte: CPC Cetec)
+
+- Abstrair como o valor está sendo armazenado para os usuários da classe.
+- Apenas código da própria classe deve ser capaz de alterar valores que definem o estado do objeto.
+(Fonte: Slide)
+
+### Modificadores de acesso
+
+- `public` - Permite acesso de quakquer uma classe, pacote, subclasse, ou seja, todos o lugares.
+- `protected` - Permite acesso:
+	- classes no mesmo pacote ou que estão fora mas que estendam desta classe;	
+- `package-protected/friendly(defaul)` Permite acesso:
+	- Usado se não especificado outro;
+	- Permite acesso para outras classes no mesmo pacote private;
+- `private` - Permite acesso apenas dentro da própria classe.
+
+![modificadores-de-acesso](https://user-images.githubusercontent.com/53382761/137360714-f9e054f2-0398-4f8c-8617-5cdae84021bc.png)
+
+Para alterações e definições de atributos em uma classe utilizamos muitas vezes o conceito de get(pegue) e set(defina).
+
+**Podemos fazer as seguintes perguntas**
+
+- Seu atributo deve ser apenas lido fora de sua classe, nunca alterado?
+	- Não implemente um método set
+- Seu atributo possui alguma regra que necessite controle (validação, conversão, etc) ao ter o valor alterado?
+	- Implemente o controle no método set
+- Seu atributo deve ser apenas alterado fora de sua classe, mas nunca lido (situação incomum, mas existente)?
+	- Não implemente um método get
+
+## Herança
+
+Permite que façamos uma reoganização melhor do nosso código reutilizando funcionalidades.
+- Classe derivada(subclasse) "possui todo o código" da classe base(superclasse).
+- Classe derivada pode alterar o comportamento apenas para instâncias criadas a partir dela, sem comprometer a classe base.
+
+**Superclasse**(classe pai ou base) - Classe da qual as outras classe vão herdar.
+**Subclasse**(classe derivada ou filha) - Classe que herda de outra classe.
+
+Ex: `public class NomeDaClasseQueÉAquiASubclasse extends NomeDaClasseQueÉAquiASuperclasse`
+*Pode-se ler que a subclasse é uma extensão da superclasse (is-a - relacionamento é um/ ex: onibus is-a veículo / ex: hip-hop is-a música)
