@@ -246,5 +246,33 @@ Geralmente você irá agrupar classes similares em um mesmo pacote.
 •Tem vantagens para manutenção e extensão
 (Fonte: Slide)
 
-## Classes Abstratas
-Pode-se dizer que as classes abstratas servem como “modelo” para outras classes que dela herdem, não podendo ser instanciada por si só. Para ter um objeto de uma classe abstrata é necessário criar uma classe mais especializada herdando dela e então instanciar essa nova classe. Os métodos da classe abstrata devem então serem sobrescritos nas classes filhas. (Fonte: Devmedia)
+## Classes e métodos abstratos
+A abstração de dados é o processo de ocultar certos detalhes e mostrar apenas as informações essenciais ao usuário.
+
+
+A `abstract` palavra-chave é um modificador sem acesso, usado para classes e métodos:
+
+Classe abstrata: é uma classe restrita que não pode ser usada para criar objetos (para acessá-la deve ser herdada de outra classe).
+
+Método abstrato: só pode ser usado em uma classe abstrata, e não possui corpo. O corpo é fornecido pela subclasse. Onde é obrigatória sua declaração. (herdado de).
+
+(Fonte: w3schools)
+
+Exemplo:
+~~~JAVA
+abstract class Conta {
+
+	private double saldo;
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public abstract void imprimeExtrato();
+
+}
+~~~
