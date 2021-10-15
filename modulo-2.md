@@ -193,3 +193,17 @@ Permite que façamos uma reoganização melhor do nosso código reutilizando fun
 
 Ex: `public class NomeDaClasseQueÉAquiASubclasse extends NomeDaClasseQueÉAquiASuperclasse`
 *Pode-se ler que a subclasse é uma extensão da superclasse (is-a - relacionamento é um/ ex: onibus is-a veículo / ex: hip-hop is-a música)
+
+## Polimorfismo
+
+Polimorfismo(muitas formas) referese à alteração do comportamento de uma superclasse na subclasse.
+- Polimorfismo Estático ou Sobrecarga (Overload)
+- Polimorfismo Dinâmico ou Sobreposição (Override)
+
+O **Polimorfismo Estático** se dá quando temos a mesma operação implementada várias vezes na mesma classe. A escolha de qual operação será chamada depende da assinatura dos métodos sobrecarregados.
+
+O **Polimorfismo Dinâmico** acontece na herança, quando a subclasse sobrepõe o método original. Agora o método escolhido se dá em tempo de execução e não mais em tempo de compilação. A escolha de qual método será chamado depende do tipo do objeto que recebe a mensagem.
+
+(Fonte: Devmedia)
+
+- `super` : Esse comando indica que você está utilizando um método de uma super classe.
