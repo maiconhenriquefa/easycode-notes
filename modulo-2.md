@@ -6,39 +6,46 @@ Neste módulo foram abordados os conceitos de:
 1. [Classe, Objeto e Instância](classe,-objeto-e-instância);
 1. Instância e Construtores;
 
-## Introdução
+## - Introdução
 
 Orientação a Objetos surgiu na década de 1960/1970. Onde definem o objeto como entidade.
 
-Porque estudar Orientação a Objetos?
-- Modularização do código
-- Evita código macarrônicoClasse, Objeto e Instância
+- Porque estudar Orientação a Objetos?
+	- Modularização do código
+	- Evita código macarrônicoClasse, Objeto e Instância
 
-Código modularizado geralmente é:
-- Reusável
-- Fácil de manter
-- Fácil de entender
+- Código modularizado geralmente é:
+	- Reusável
+	- Fácil de manter
+	- Fácil de entender
 
 *\*Benefícios como <ins>Reuso</ins> e <ins>Manutenção</ins> são grandes motivadores para utilizar POO*
 
-## Classe, Objeto e Instância
+## - Classe, Objeto e Instância
 
 ### Classe
 
-**Conceito** - Abordagem usada em Java para definir o formato(modelo) de um objeto, ou seja estamos dizendo como o objeto irão funcionar.
+Abordagem usada em Java para definir o formato(modelo) de um objeto, ou seja estamos dizendo como o objeto irão funcionar.
+- Classe **não** é objeto;
+- Classe **não** é orientação à objetos;
 
- - Classe **não** é objeto;
- - Classe **não** é orientação à objetos;
+---
+**NOTAS**
 
 Classes são como Receita ou uma “Planta baixa” que descreve atributos
-e comportamento que todas as instâncias desta classe devem possuir. (Fonte: Slide) As classes servem tanto para encapsular informações como também para organizar e modularizar as aplicações.
+e comportamento que todas as instâncias desta classe devem possuir. (Fonte: Slide)
+
+As classes servem tanto para encapsular informações como também para organizar e modularizar as aplicações.
+
+---
+
 
 Uma classe é definida pelos seus membros:
-- Atributos (ou campo/propriedade) - 
+- **Atributos (ou campo/propriedade)**
 ~~~JAVA
 [modificador] [tipo] nome = [valor]
 ~~~
-- Construtores
+- **Construtores**
 ~~~JAVA
 [modificador] nomeDaClasse{
     ContrutorComNomeDaClasse(parametos){
@@ -46,7 +53,7 @@ Uma classe é definida pelos seus membros:
     };
 }
 ~~~
-- Métodos
+- **Métodos**
 ~~~JAVA
 [modificador] [tipo] nome() {
     //corpo();
@@ -87,20 +94,22 @@ public class Livro extends Objetct{
 *Em Java, cada classe deve ser definida em um arquivo que tem o mesmo nome da classe.<br>
 Ex: O arquivo com a definição da classe Livro deve ser salvo com o nome `Livro.java`* (Fonte: Slide)
 
+---
+**NOTAS**
+
 O poder de **abstração** é muito importante ao definir as classes de um sistema!<br>
 A classe deve ser capaz de **representar** o objeto real, mas **apenas para as necessidades daquele sistema específico**. (Fonte: Slide)
 
+---
+
 ### Objeto
 
-**Objeto** - É tudo que é manipulado ou então, que pode ser. (fonte: Aurélio)
+É tudo que é manipulado ou então, que pode ser. (fonte: Aurélio)
 
-*Toda classe é um Object.
-
-*Objetos sempre serão compostos de **Atributos**(propriedades) e **Comportamentos**(funções)*
-
-*O objeto pode ser fomado por **n** objetos.*
-
-**Função**, ou então método, compreende tudo que o objeto faz.
+- Toda classe é um Object.
+- Objetos sempre serão compostos de **Atributos**(propriedades) e **Comportamentos**(funções)*
+- O objeto pode ser fomado por **n** objetos.*
+- **Função**, ou então método, compreende tudo que o objeto faz.
 
 ## Instância e Construtores 
 
@@ -236,3 +245,6 @@ Geralmente você irá agrupar classes similares em um mesmo pacote.
 •Ajuda a organizar o código
 •Tem vantagens para manutenção e extensão
 (Fonte: Slide)
+
+## Classes Abstratas
+Pode-se dizer que as classes abstratas servem como “modelo” para outras classes que dela herdem, não podendo ser instanciada por si só. Para ter um objeto de uma classe abstrata é necessário criar uma classe mais especializada herdando dela e então instanciar essa nova classe. Os métodos da classe abstrata devem então serem sobrescritos nas classes filhas. (Fonte: Devmedia)
