@@ -207,3 +207,32 @@ O **Polimorfismo Dinâmico** acontece na herança, quando a subclasse sobrepõe 
 (Fonte: Devmedia)
 
 - `super` : Esse comando indica que você está utilizando um método de uma super classe.
+
+## Pacotes
+
+Deixar todas as classes misturadas na raiz do projeto seria um pesadelo em termos de manutenção. Por isso temos os pacotes.
+
+A API de Java oferece um grande número de classes pré-definidas (como a classe String, por exemplo!), organizadas em pacotes.
+
+A classe Scanner, por exemplo, está no pacote java.util
+•Classes de coleções, como ArrayList, HashMap e Stack também estão no pacote java.util
+
+O pacote java.math disponibiliza classes relacionadas a manipulação matemática
+
+- O pacote é chamado pelo seu caminho.
+Exemplo:
+~~~JAVA
+package pasta.subpasta
+//Caso fosse para procurar nessa pasta. Contudo abaixo ja estamos em um pacote padrão do Java.
+
+import java.util.ArrayList;
+
+public class Main {
+    Private ArrayList<String> autrores;
+}
+~~~
+
+Geralmente você irá agrupar classes similares em um mesmo pacote.
+•Ajuda a organizar o código
+•Tem vantagens para manutenção e extensão
+(Fonte: Slide)
