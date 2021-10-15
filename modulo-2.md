@@ -252,9 +252,8 @@ A abstração de dados é o processo de ocultar certos detalhes e mostrar apenas
 
 A `abstract` palavra-chave é um modificador sem acesso, usado para classes e métodos:
 
-Classe abstrata: é uma classe restrita que não pode ser usada para criar objetos (para acessá-la deve ser herdada de outra classe).
-
-Método abstrato: só pode ser usado em uma classe abstrata, e não possui corpo. O corpo é fornecido pela subclasse. Onde é obrigatória sua declaração. (herdado de).
+- **Classe abstrata**: é uma classe restrita que não pode ser usada para criar objetos (para acessá-la deve ser herdada de outra classe).
+- **Método abstrato**: só pode ser usado em uma classe abstrata, e não possui corpo. O corpo é fornecido pela subclasse. Onde é obrigatória sua declaração. (herdado de).
 
 (Fonte: w3schools)
 
@@ -276,3 +275,52 @@ abstract class Conta {
 
 }
 ~~~
+
+## Interfaces
+
+Outra forma de obter abstração em Java é com interfaces.
+
+**Por que Outra forma de obter abstração em Java é com interfaces.e quando usar interfaces?**
+1) Para alcançar a segurança - oculte certos detalhes e mostre apenas os detalhes importantes de um objeto (interface).
+
+2) Java não suporta "herança múltipla" (uma classe só pode herdar de uma superclasse). No entanto, isso pode ser alcançado com interfaces, porque a classe pode implementar várias interfaces. Nota: Para implementar várias interfaces, separe-as com uma vírgula (veja o exemplo abaixo).
+
+Para acessar os métodos da interface, a interface deve ser "implementada" (meio como herdada) por outra classe com a `implements` palavra - chave.
+
+Exemplo:
+~~~JAVA
+// Interface
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+// Pig "implements" the Animal interface
+class Pig implements Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    // The body of sleep() is provided here
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+~~~
+
+- Assim como as classes abstratas , as interfaces não podem ser usadas para criar objetos (no exemplo acima, não é possível criar um objeto "Animal" em MyMainClass)
+- Os métodos de interface não têm corpo - o corpo é fornecido pela classe "implemento"
+- Na implementação de uma interface, você deve substituir todos os seus métodos
+- Os métodos de interface são por padrão abstracte public
+- Os atributos da interface são, por padrão public, staticefinal
+- Uma interface não pode conter um construtor (pois não pode ser usada para criar objetos).
+
+(Fonte: w3schools)
