@@ -1,12 +1,25 @@
 #  :pushpin: Módulo 2 - Programação Orientada a Objetos (POO)
 
+>Navegação
+<ul>
+<li><a href="https://github.com/maiconhenriquefa/easycode-notes/edit/main">Principal</a></li>
+<li><a href="https://github.com/maiconhenriquefa/easycode-notes/edit/main/modulo-1">Módulo-1</a></li>
+</ul>
+
 Neste módulo foram abordados os conceitos de:
   
 1. [Introdução](#introdução);
-1. [Classe, Objeto e Instância](classe,-objeto-e-instância);
-1. Instância e Construtores;
+1. [Classe, Objeto e Instância](#classe-objeto-e-instância);
+1. [Instância e Construtores](#instância-e-construtores);
+2. [Métodos](#métodos);
+3. [Encapsulamento](#encapsulamento);
+4. [Herança](#herança);
+5. [Polimorfismo](#polimorfismo);
+6. [Pacotes](#pacotes);
+7. [Classes e métodos abstratos](#classes-e-métodos-abstratos);
+8. [Interfaces](#interfaces);
 
-## - Introdução
+## Introdução
 
 Orientação a Objetos surgiu na década de 1960/1970. Onde definem o objeto como entidade.
 
@@ -21,7 +34,7 @@ Orientação a Objetos surgiu na década de 1960/1970. Onde definem o objeto com
 
 *\*Benefícios como <ins>Reuso</ins> e <ins>Manutenção</ins> são grandes motivadores para utilizar POO*
 
-## - Classe, Objeto e Instância
+## Classe, Objeto e Instância
 
 ### Classe
 
@@ -33,7 +46,7 @@ Abordagem usada em Java para definir o formato(modelo) de um objeto, ou seja est
 **NOTAS**
 
 Classes são como Receita ou uma “Planta baixa” que descreve atributos
-e comportamento que todas as instâncias desta classe devem possuir. (Fonte: Slide)
+e comportamento que todas as instâncias desta classe devem possuir. >(Fonte: Slide)
 
 As classes servem tanto para encapsular informações como também para organizar e modularizar as aplicações.
 
@@ -91,20 +104,20 @@ public class Livro extends Objetct{
 }
 ~~~
 
-*Em Java, cada classe deve ser definida em um arquivo que tem o mesmo nome da classe.<br>
-Ex: O arquivo com a definição da classe Livro deve ser salvo com o nome `Livro.java`* (Fonte: Slide)
+>*Em Java, cada classe deve ser definida em um arquivo que tem o mesmo nome da classe.<br>
+>Ex: O arquivo com a definição da classe Livro deve ser salvo com o nome `Livro.java`* (Fonte: Slide)
 
 ---
 **NOTAS**
 
 O poder de **abstração** é muito importante ao definir as classes de um sistema!<br>
-A classe deve ser capaz de **representar** o objeto real, mas **apenas para as necessidades daquele sistema específico**. (Fonte: Slide)
+A classe deve ser capaz de **representar** o objeto real, mas **apenas para as necessidades daquele sistema específico**. >(Fonte: Slide)
 
 ---
 
 ### Objeto
 
-É tudo que é manipulado ou então, que pode ser. (fonte: Aurélio)
+É tudo que é manipulado ou então, que pode ser. >(fonte: Aurélio)
 
 - Toda classe é um Object.
 - Objetos sempre serão compostos de **Atributos**(propriedades) e **Comportamentos**(funções)*
@@ -140,7 +153,7 @@ public Livro(String titulo, String autor, int ano){
 
 ### This
 
-`this` - é uma palavra reservada utilizada para acessar a própria instância. (Fonte: Slide)
+`this` - é uma palavra reservada utilizada para acessar a própria instância. >(Fonte: Slide)
 
 ### Overloading
 
@@ -162,11 +175,11 @@ Operações que realizam ações e modificam os valores dos atributos de seu res
 
 ## Encapsulamento
 
-**conceito** - Conceitua-se encapsulamento como sendo o processo utilizado para proteger os campos e operações de uma classe (atributos e métodos), permitindo que apenas os membros públicos. (Fonte: CPC Cetec)
+Conceitua-se encapsulamento como sendo o processo utilizado para proteger os campos e operações de uma classe (atributos e métodos), permitindo que apenas os membros públicos. >(Fonte: CPC Cetec)
 
 - Abstrair como o valor está sendo armazenado para os usuários da classe.
 - Apenas código da própria classe deve ser capaz de alterar valores que definem o estado do objeto.
-(Fonte: Slide)
+>(Fonte: Slide)
 
 ### Modificadores de acesso
 
@@ -213,7 +226,7 @@ O **Polimorfismo Estático** se dá quando temos a mesma operação implementada
 
 O **Polimorfismo Dinâmico** acontece na herança, quando a subclasse sobrepõe o método original. Agora o método escolhido se dá em tempo de execução e não mais em tempo de compilação. A escolha de qual método será chamado depende do tipo do objeto que recebe a mensagem.
 
-(Fonte: Devmedia)
+>(Fonte: Devmedia)
 
 - `super` : Esse comando indica que você está utilizando um método de uma super classe.
 
@@ -255,7 +268,7 @@ A `abstract` palavra-chave é um modificador sem acesso, usado para classes e m�
 - **Classe abstrata**: é uma classe restrita que não pode ser usada para criar objetos (para acessá-la deve ser herdada de outra classe).
 - **Método abstrato**: só pode ser usado em uma classe abstrata, e não possui corpo. O corpo é fornecido pela subclasse. Onde é obrigatória sua declaração. (herdado de).
 
-(Fonte: w3schools)
+>(Fonte: w3schools)
 
 Exemplo:
 ~~~JAVA
@@ -323,4 +336,4 @@ class Main {
 - Os atributos da interface são, por padrão public, staticefinal
 - Uma interface não pode conter um construtor (pois não pode ser usada para criar objetos).
 
-(Fonte: w3schools)
+>(Fonte: w3schools)
