@@ -2,8 +2,8 @@
 
 >Navegação
 <ul>
-<li><a href="https://github.com/maiconhenriquefa/easycode-notes/edit/main">Principal</a></li>
-<li><a href="https://github.com/maiconhenriquefa/easycode-notes/edit/main/modulo-1">Módulo-1</a></li>
+<li><a href="https://github.com/maiconhenriquefa/easycode-notes">Principal</a></li>
+<li><a href="https://github.com/maiconhenriquefa/easycode-notes/blob/main/modulo-1.md">Módulo-1</a></li>
 </ul>
 
 Neste módulo foram abordados os conceitos de:
