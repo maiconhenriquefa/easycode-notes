@@ -5,8 +5,9 @@ Neste módulo foram abordados os conceitos de:
 1. [Algoritmos](#algoritmos)
 2. [Variáveis](#variáveis)
 3. [Tipos de Dados](#tipos-de-dados)
-4. [Operadores, Expressões e Comandos](#operadores-expressões-e-comandos)
-5. [Estruturas Condicionais](#estruturas-condicionais)
+4. [Operadores, Expressões e Comandos](#operadores-expressões-e-comandos)]
+5. [Estruturas de Repetição](#estruturas-de-repetição)
+6. [Estruturas Condicionais](#estruturas-condicionais)
 
 ## Algoritmos
 
@@ -342,6 +343,62 @@ public class Main
 }
 ~~~
 
+## Estruturas de Repetição
+
+AS estruturas de repetição, também conhecidas como laços(loops) são utilizadas para executar repetidas vezs uma instrução, sobre determinada condição.
+
+Estrutura: inicialização-condição-corpo e iteração.
+
+### While (enquanto)
+
+~~~JAVA
+While(Condição){
+	- Comandos
+	- Comandos que faça a condição ser satisfeita
+}
+~~~
+
+### Do - While (faça - enquanto)
+
+~~~JAVA
+do{
+	- Comandos
+	- Comandos que faça a condição ser satisfeita
+} while(condição)
+~~~
+
+*Diferente do while, o do/while faz o comando antes da condição*
+
+Exercício:
+~~~JAVA
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    int numeroUsuario =0;
+	    
+	    System.out.print("Informe um número de 0 à 10: ");
+	    numeroUsuario = scan.nextInt();
+	    
+	    while(numeroUsuario<0 || numeroUsuario>10){
+	        System.out.print("Informe um número correto de 0 à 10: ");
+	        numeroUsuario = scan.nextInt();
+	    };
+	    
+	    System.out.print("Nota informada corretamente: "+numeroUsuario);  
+	}
+}
+~~~
+
+### For (para)
+~~~JAVA
+for(inicialização, condição, iteração){
+	- comandos
+}
+~~~
+
+*For é uma estrura de repetição mais compacta, onde a inicialização, condição e iteração são declarados no cabeçalho*
 ## Modularização
 
 **Modularização** - *Conceito computacional que é empregado para dividir o seu programa em partes funcionais, partes essas qeu conversam umas com as outras.*
