@@ -337,3 +337,40 @@ class Main {
 - Uma interface não pode conter um construtor (pois não pode ser usada para criar objetos).
 
 >(Fonte: w3schools)
+
+## Exception
+
+Exceções acontecem em Java avisando que ocorreu um problema potencialmente recuperável
+- Estende da classe `java.lang.Exception`
+- Estende-se de outra classe `java.lang.Throwable`
+
+### Try/Catch/Finally
+
+Para sabermos se uma exceção ocorre podemos utilizar o `if`, mas também podemos utlizar `try`/`cat`
+- `try` (tentar): {O que queremos que funcione}
+- `catch` (pegar): (passamos o tipo da exceção) {Enão o código é executado se houver uma exceção}
+- `finally` (finalmente): {Trecho de código que será executado ao "final" independente de sucesso ou erro no código}
+
+*\*O tipo Exception e serve para todos os tipos de excessões*
+*\*Pode-se ter mais de um catch para cada try, contudo em exceções é nescessário observar a hierarquia das classes para que o erro não fique somente no primeiro catch*
+
+### ERRORS
+
+Erros que não possuẽm exceções, que seriam erros irrecuperáveis.
+
+### Throw (lançar)
+
+Para que possamos lançar excessões para comunicar um problema podemos utilizar o `throw`.
+ex:
+~~~JAVA
+if (livro == null) {
+	throw new Exception("mensagem");
+}
+~~~
+------
+Exceções
+- **Checked**: azul na imagem abaixo
+- **Unchecked**: amarelos na imagem abaixo
+
+![image](https://user-images.githubusercontent.com/53382761/138131876-2ba75ecc-fa5e-4eaf-9f6e-14a5e1632582.png)
+
