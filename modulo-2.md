@@ -18,6 +18,8 @@ Neste módulo foram abordados os conceitos de:
 6. [Pacotes](#pacotes);
 7. [Classes e métodos abstratos](#classes-e-métodos-abstratos);
 8. [Interfaces](#interfaces);
+9. [Exception](#exception);
+10. [Enun](#enun)
 
 ## Introdução
 
@@ -374,3 +376,68 @@ Exceções
 
 ![image](https://user-images.githubusercontent.com/53382761/138131876-2ba75ecc-fa5e-4eaf-9f6e-14a5e1632582.png)
 
+## Enun
+>Fonte: Slide <br>
+
+"Tipo que define uma coleção de constantes que representam valores válidos para um tipo"
+
+Ex:
+~~~JAVA
+public enum DiaDaSemana {
+	Segunda,
+	Terça,
+	Quarta,
+	Quinta,
+	Sexta,
+	Sábado,
+	Domingo
+}
+~~~
+
+Em Java, um enum é um tipo especial de classe
+Enums podem ter:
+- Constantes
+- Atributos
+- Construtores
+- Métodos
+
+Outro exemplo:
+~~~JAVA
+publicenum DiaDaSemana {
+	Segunda(1, "seg"),
+	Terça(2, "ter"), 
+	Quarta(3, "qua"),
+	Quinta(4, "qui"),
+	Sexta(5, "sex"), 
+	Sábado(6, "sab"),
+	Domingo(7, "dom")
+	;
+	privatefinalintordem;
+	privatefinal String abreviacao;
+	privateDiaDaSemana(intordem, String abreviacao) {
+	this.ordem= ordem;
+	this.abreviacao= abreviacao;
+	}
+	publicint getOrdem() {
+	returnthis.ordem;
+	}
+	publicString getAbreviacao() {
+	returnthis.abreviacao;
+	}}
+~~~
+Enums não podem estender de outras classes
+- “Por baixo dos panos”, todo enum já estende da classe Enum.
+- Java não permite Herança Múltipla!
+- Enums podem implementar interfaces
+
+~~~JAVA
+// Se você sabe qual valor usar em tempo de compilação:
+DiaDaSemana diaCompilacao = DiaDaSemana.Sexta;// Se você não sabe o valor em tempo de compilação e precisa 
+~~~
+~~~JAVA
+// definir dinamicamente (input do usuário, por exemplo):
+DiaDaSemana diaDinamico = DiaDaSemana.valueOf("Segunda");
+~~~
+Quando é possível saber em tempo de desenvolvimento todos os valores possíveis
+- Valores fixos (dias da semana, naipes de um baralho)
+- Valores com baixa variabilidade (itens de um menu, etc)
